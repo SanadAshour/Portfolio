@@ -322,6 +322,9 @@ img { display: block; max-width: 100%; }
   align-items: start;
 }
 
+.about__link { color: var(--accent); font-weight: 500; }
+.about__link:hover { text-decoration: underline; }
+
 .about__text {
   color: var(--text-muted);
   margin-bottom: 18px;
@@ -441,6 +444,7 @@ img { display: block; max-width: 100%; }
   letter-spacing: .02em;
 }
 .timeline__desc { font-size: .95rem; color: var(--text-muted); line-height: 1.7; }
+.timeline__list { font-size: .95rem; color: var(--text-muted); line-height: 1.7; padding-left: 20px; }
 
 /* ============================================
    SKILLS
@@ -606,6 +610,8 @@ img { display: block; max-width: 100%; }
    ============================================ */
 .references { background: var(--bg-alt); }
 
+.ref__grid { display: flex; flex-wrap: wrap; gap: 28px; }
+
 .ref__card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -761,6 +767,16 @@ img { display: block; max-width: 100%; }
 .float-btn--wa:hover {
   transform: scale(1.12) translateY(-3px);
   box-shadow: 0 8px 28px rgba(37,211,102,.45);
+}
+
+/* Alto Dark */
+.float-btn--alto {
+  background: var(--text);
+  color: #fff;
+}
+.float-btn--alto:hover {
+  transform: scale(1.12) translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,.35);
 }
 
 /* Email Brown */
